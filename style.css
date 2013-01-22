@@ -1,0 +1,111 @@
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #858585;
+}
+.main{
+	margin: 100px auto 0px;
+	width:1000px;
+}
+
+.board {
+	width: 900px;
+	height: 300px;
+	float:left;
+	border: 1px solid black;
+	background: #fff;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/** 
+* Фигуры
+*/
+.primitive{
+	cursor: pointer;
+	float:left;
+}
+.figure {
+	position: absolute;
+	cursor: pointer;
+}
+.primitive li{
+	margin:0px 0px 10px;
+	list-style: none;
+}
+.square {
+	height: 30px;
+	width: 30px;
+	border: 1px solid black;
+}
+.rectangle {
+	height: 20px;
+	width: 40px;
+	border: 1px solid black;
+}
+.circle {
+	height: 30px;
+	width: 30px;
+	border: 1px solid black;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+.oval {
+	height: 20px;
+	width: 40px;
+	border: 1px solid black;
+	-moz-border-radius: 20px / 10px;
+	-webkit-border-radius: 20px / 10px;
+	border-radius: 20px / 10px;
+}
+.parallelogram {
+    width: 40px;
+    height: 24px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+	border: 1px solid black;
+}
+
+/** 
+* Цвета
+*/
+.palette {
+	cursor: pointer;
+	float:left;
+	margin:0px 5px 0px 10px;
+}
+
+
+.palette  li{
+		width:30px;
+		height:30px;
+		list-style: none;
+		margin: 0px 0px 3px;
+		border: 1px solid black;
+}
+
+.LawnGreen {	background:LawnGreen;}
+.DodgerBlue {background:DodgerBlue;}
+.yellow {background:yellow;}
+.DeepPink {background:DeepPink;}
+.Aqua {background:Aqua;}
+.black {background:black;}
+.Chocolate {background:Chocolate;}
+.Orange {background:Orange;}
+.Magenta {background:Magenta;}
+
+/** 
+* Кнопки
+*/
+.buttons {
+	clear:both;
+	width: 350px;
+	padding-top:20px;
+	margin: 0 auto;
+}
